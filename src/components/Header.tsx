@@ -13,12 +13,13 @@ const Header = () => {
       <div className="bg-vap-dark text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <span>📍 45 W John Street Unit B, Hicksville, NY 11801</span>
+            <span>📍 1 Main Street
+NY 12345, USA</span>
             <span className="hidden md:inline">🚚 Free Shipping on Orders Over $199</span>
           </div>
           <div className="flex items-center gap-4">
             <Phone className="w-4 h-4" />
-            <span>(516) 470-1788</span>
+            <span>(777) 123-4567</span>
           </div>
         </div>
       </div>
