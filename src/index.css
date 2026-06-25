@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vehix Auto Parts Design System - Premium Automotive Theme */
+
+@layer base {
+  :root {
+    /* Brand Colors - Based on VAP Logo */
+    --vap-green: 142 76% 36%;
+    --vap-green-light: 142 76% 45%;
+    --vap-green-dark: 142 76% 28%;
+    --vap-dark: 0 0% 15%;
+    --vap-gray: 0 0% 25%;
+    --vap-light-gray: 0 0% 95%;
+    
+    /* Automotive Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--vap-dark)), hsl(var(--vap-gray)));
+    --gradient-green: linear-gradient(135deg, hsl(var(--vap-green)), hsl(var(--vap-green-light)));
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    
+    /* Professional Shadows */
+    --shadow-premium: 0 20px 40px -10px hsl(var(--vap-dark) / 0.2);
+    --shadow-card: 0 8px 25px -5px hsl(var(--vap-dark) / 0.1);
+    --shadow-green-glow: 0 0 30px hsl(var(--vap-green) / 0.3);
+    
+    /* Base System Colors */
+    --background: 0 0% 98%;
+    --foreground: var(--vap-dark);
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--vap-dark);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--vap-dark);
+
+    --primary: var(--vap-green);
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: var(--vap-light-gray);
+    --secondary-foreground: var(--vap-dark);
+
+    --muted: var(--vap-light-gray);
+    --muted-foreground: var(--vap-gray);
+
+    --accent: var(--vap-green-light);
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: var(--vap-green);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: var(--vap-dark);
+    --foreground: 0 0% 95%;
+
+    --card: var(--vap-gray);
+    --card-foreground: 0 0% 95%;
+
+    --popover: var(--vap-gray);
+    --popover-foreground: 0 0% 95%;
+
+    --primary: var(--vap-green);
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: var(--vap-gray);
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: var(--vap-gray);
+    --muted-foreground: 0 0% 70%;
+
+    --accent: var(--vap-green-light);
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: var(--vap-gray);
+    --input: var(--vap-gray);
+    --ring: var(--vap-green);
+  }
+  
+  /* Custom Automotive Styling */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .green-gradient {
+    background: var(--gradient-green);
+  }
+  
+  .premium-shadow {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .green-glow {
+    box-shadow: var(--shadow-green-glow);
+  }
+  
+  .automotive-grid {
+    background-image: 
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
