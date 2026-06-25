@@ -3,16 +3,18 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Bilkul clean aur standard object format takbaki wrangler auto-modify kar sake
+const isDev = process.env.NODE_ENV === "development";
+
+// Bilkul clean aur wahi structure jo wrangler ko chahiye
 export default defineConfig({
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
-    react(), 
-    process.env.NODE_ENV === "development" ? componentTagger() : null
-  ].filter(Boolean),
+    react(),
+    ...(isDev ? [componentTagger()] : [])
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
