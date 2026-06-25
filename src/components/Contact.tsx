@@ -75,7 +75,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold text-lg">(516) 470-1788</p>
+                <p className="font-semibold text-lg">(777) 123-4567</p>
                 <p className="text-gray-600 text-sm">Monday - Friday: 8:00 AM - 6:00 PM</p>
                 <p className="text-gray-600 text-sm">Saturday: 9:00 AM - 4:00 PM</p>
               </CardContent>
@@ -89,8 +89,8 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">45 W John Street Unit B</p>
-                <p>Hicksville, NY 11801</p>
+                <p className="font-semibold">1 Main Street</p>
+                <p>NY 12345, USA</p>
                 <p className="text-gray-600 text-sm mt-2">
                   Professional consultation and expert advice available
                 </p>
@@ -241,7 +241,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="automotive" size="lg">
-              Call Now: (516) 470-1788
+              Call Now: (777) 123-4567
             </Button>
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-vap-green">
               Emergency Parts Request
